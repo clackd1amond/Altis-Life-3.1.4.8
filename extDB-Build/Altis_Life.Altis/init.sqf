@@ -9,7 +9,7 @@ if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
 life_versionInfo = "Altis Life RPG v3.1.4.8";
-[] execVM "briefing.sqf"; //Load Briefing
+[] execVM "briefing.sqf";
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;

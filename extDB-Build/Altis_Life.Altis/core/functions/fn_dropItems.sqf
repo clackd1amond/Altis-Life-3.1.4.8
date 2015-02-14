@@ -44,7 +44,7 @@ if (_death) then
 
 if(_exit) exitWith {};
 if (count _data2 < 1) exitWith {};
-if((time - life_action_delay) < 3 && !(_death)) exitWith {hint "Vous ne pouvez pas lacher des objets aussi rapidement. Essayez de les lacher par paquet!"};
+if((time - life_action_delay) < 1 && !(_death)) exitWith {hint "Vous ne pouvez pas lacher des objets aussi rapidement. Essayez de les lacher par paquet!"};
 life_action_delay = time;
 
 {

@@ -24,17 +24,17 @@ BEGIN
 	UPDATE vehicles SET `active`= 0;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteDeadVehicles`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteDeadVehicles`()
 BEGIN
 	DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldHouses`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses`()
 BEGIN
   DELETE FROM `houses` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldGangs`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldGangs`()
 BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END$$

@@ -3,7 +3,7 @@ class Life_My_Gang_Diag {
 	name= "life_my_gang_menu";
 	movingEnable = false;
 	enableSimulation = true;
-	onLoad = "[] spawn {waitUntil {!isNull (findDisplay 2520)}; ((findDisplay 2520) displayCtrl 2523) ctrlSetText format[localize ""STR_Gang_PriceTxt"",[(getNumber(missionConfigFile >> 'Life_Settings' >> 'gang_price'))] call life_fnc_numberText]};";
+	onLoad = "";
 	
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {

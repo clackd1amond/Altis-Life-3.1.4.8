@@ -21,7 +21,7 @@ DELIMITER $$
 --
 CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
-	UPDATE vehicles SET `active`= 0;
+	UPDATE `vehicles` SET `active`= 0;
 END$$
 
 CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteDeadVehicles`()
@@ -31,12 +31,12 @@ END$$
 
 CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses`()
 BEGIN
-  DELETE FROM `houses` WHERE `owned` = 0;
+  	DELETE FROM `houses` WHERE `owned` = 0;
 END$$
 
 CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldGangs`()
 BEGIN
-  DELETE FROM `gangs` WHERE `active` = 0;
+  	DELETE FROM `gangs` WHERE `active` = 0;
 END$$
 
 DELIMITER ;
